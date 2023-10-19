@@ -16,6 +16,7 @@ form.addEventListener('input',
 form.addEventListener('submit', e => {
     e.preventDefault();
     console.log(frmData);
+    if(localStorage.getItem(L_STORAGE_KEY))
     localStorage.removeItem(L_STORAGE_KEY);
     e.target.reset();
 })
